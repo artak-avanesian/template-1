@@ -1,12 +1,737 @@
+/*#FF0036 - красный*/
+
 * {
 	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Glyphter";
+	src: url('fonts/Glyphter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.glyph {
+	font-family: "Glyphter";
 }
 .container {
 	width: 1170px;
 	margin: 0 auto;
 }
-.row::after {
+.row::after, .main-menu::after {
 	content: "";
 	display: block;
 	clear: both;
+}
+.header {
+	background-color: #08080C;
+}
+.header, .bg-woman-in-red, .about-creativia, .portfolio, .our-product-fetures, .our-clients, .our-teamwork, .our-skills , .our-services, .plans-bestseller, .twitter-block, .our-blog, .follow-creativia, .fine-us-here {
+	width: 1400px;
+	margin: 0 auto;
+}
+.main-menu {
+	list-style: none;
+	margin-bottom: 0;
+}
+.main-menu li a {
+	float: left;
+	color: #A4A4A4;
+	font-size: 18px;
+	font-family: "Raleway";
+	font-weight: normal;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	margin-left: 31px;
+	border-bottom: 2px solid #08080C;
+	border-top: 2px solid #08080C;
+	text-transform: uppercase;
+}
+.main-menu li a:hover {
+	border-bottom-color: #FF0036;
+	border-top-color: #FF0036;
+	color: white;
+	text-decoration: none;
+}
+.main-menu li:first-child a {
+	margin-left: 0;
+}
+.main-menu li:last-child a {
+	float: right;
+}
+.creativia {
+	color: white;
+	font-size: 32px;
+	font-family: "Oxygen";
+}
+.logo-shape {
+	heigh: 203px;
+	border-bottom: 3px solid #FF0036;
+	width: 122px;
+	background-color: #131313;
+	position: relative;
+}
+.logo-shape::before {
+
+}
+.bg-woman-in-red {
+	background: #1A1A1A url(images/woman-in-red.jpg) no-repeat 0% 40%;
+}
+.black-bg {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.why-creativia {
+	position: relative;
+}
+.question {
+	font-size: 30px;
+	font-family: "Raleway";
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	padding-top: 175px;
+	padding-bottom: 25px;
+}
+.red {
+	color: #FF0036;
+}
+.lorem-ipsum {
+	font-size: 16px;
+	font-family: "Lato";
+	color: white;
+	text-align: center;
+	padding-bottom: 37px;
+}
+.lorem-ipsum .glyph {
+	position: absolute;
+	color: #A4A4A4;
+	font-size: 28px;
+	top: 295px;
+}
+.lorem-ipsum .glyph:hover {
+	color: #FF0036;
+	cursor: pointer;
+}
+.lorem-ipsum .glyph:first-of-type {
+	left: -87px;
+}
+.lorem-ipsum .glyph:last-of-type {
+	right: -87px;
+}
+.why-creativia a {
+	display: inline-block;
+	width: 170px;
+	height: 50px;
+	background-color: #131313;
+	color: white;
+	font-size: 20px;
+	font-family: "Raleway";
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 50px;
+	text-align: center;
+}
+.why-creativia a:hover {
+	text-decoration: none;
+	background-color: #FF0036;
+}
+.why-creativia a:last-of-type {
+	margin-left: 30px;
+}
+.why-creativia-buttons {
+	width: 374px;
+	margin: 0 auto;
+	padding-bottom: 215px;
+}
+.about-creativia .row {
+	width: 1170px;
+	margin: 0 auto;
+}
+.about-header {
+	font-size: 30px;
+	font-family: "Raleway";
+	font-weight: 700;
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 22px;
+}
+.about-lorem {
+	font-size: 16px;
+	font-family: "Lato";
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 88px;
+}
+.about-details {
+	font-size: 16px;
+	font-family: "Lato";
+	line-height: 22px;
+	text-align: justify;
+	padding-bottom: 30px;
+}
+.about-creativia .col-md-6 {
+	padding-left: 0!important;
+}
+.more-who {
+	font-family: "Raleway";
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #F7F7F7;
+	border: 1px solid #E7E7E7;
+	color: black;
+	position: relative;
+}
+.info-block-about .glyph {
+	font-size: 18px;
+	border-right: 1px solid #E7E7E7;
+	color: black;
+}
+.more, .more-description {
+	display: inline-block;
+}
+.more {
+	padding: 0px 20px;
+}
+.more-description {
+	padding-left: 30px;
+}
+.more-description-paragraph {
+	border: 1px solid #E7E7E7;
+	border-top: none;
+	color: black;
+	font-style: 14px;
+	font-family: "Lato";
+	line-height: 22px;
+	padding: 0 15px;
+	text-align: justify;
+	display: none;
+}
+.who-is-creativia, .experiences {
+	padding-bottom: 10px;
+}
+.more-who:hover + .more-description-paragraph {
+	display: block;
+}
+.more-who:hover, .more-who:hover .glyph { 
+	color: #FF0036;
+}
+.more-who .line {
+	position: absolute;
+	left: 60px;
+	top: 0px;
+	width: 1px;
+	height: 50px;
+	background-color: #E7E7E7;
+}
+.more-who .minus {
+	display: none;
+}
+.more-who:hover .minus{
+	display: block;
+}
+.more-who:hover .plus {
+	display: none;
+} 
+.line-slider {
+	width: 515px;
+	height: 1px;
+	background-color: black;
+	margin: 0 auto;
+	position: relative;
+}
+.slider {
+	margin-top: 105px;
+}
+[class^="mode-"] {
+	display: inline-block;
+	width: 260px;
+	text-align: center;
+}
+.shape-slider {
+	position: absolute;
+	left: 247.5px;
+	top: -9px;
+}
+.shape-hexa-slider {
+	position: relative;
+	width: 10px;
+	height: 18px;
+	background-color: black;
+}
+.shape-hexa-slider::before, .shape-hexa-slider::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 9px;
+	border-bottom-width: 9px;
+}
+.shape-hexa-slider::before {
+	border-left-width: 0;
+	border-right-width: 5px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: black;
+	left: -5px;
+}
+.shape-hexa-slider::after {
+	border-right-width: 0;
+	border-left-width: 5px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: black;
+	right: -5px;
+}
+.mode-name {
+	font-family: "Raleway";
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	padding-top: 94px;
+}
+.mode-description {
+	font-family: "Lato";
+	font-size: 16px;
+	line-height: 22px;
+	padding-bottom: 85px;
+}
+[class^="mode-"]:not(:last-of-type) {
+	margin-right: 38px;
+}
+.hexa-shape {
+	position: relative;
+	text-align: center;
+	top: 87px;
+}
+.hexa-shape  .hexa {
+	font-size: 86px;
+	cursor: pointer;
+}
+.inside-shape {
+	position: absolute;
+	top: 45px;
+	left: 117.5px;
+}
+.inside-shape .glyph {
+	font-size: 25px;
+}
+.red-shape {
+	position: absolute;
+	left: 109px;
+	top: 23px;
+	z-index: -1;
+}
+.red-hover-shape {
+	position: relative;
+	width: 40px;
+	height: 74px;
+	background-color: white;
+}
+.red-hover-shape::before, .red-hover-shape::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 37px;
+	border-bottom-width: 37px;
+}
+.red-hover-shape::before {
+	border-left-width: 0;
+	border-right-width: 21px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: white;
+	left: -21px;
+}
+
+.red-hover-shape::after {
+	border-right-width: 0;
+	border-left-width: 21px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: white;
+	right: -21px;
+}
+.hexa:hover {
+	color: #FF0036;
+}
+.hexa:hover ~ .red-shape .red-hover-shape {
+	background-color: #FF0036;
+}
+.hexa:hover ~ .red-shape .red-hover-shape::before {
+	border-right-color: #FF0036;
+}
+.hexa:hover ~ .red-shape .red-hover-shape::after {
+	border-left-color: #FF0036; 
+}
+.hexa:hover + .inside-shape .glyph {
+	color: white;
+}
+.portfolio {
+	background-color: #262626;
+	padding-bottom: 109px;
+}
+.portfolio-header {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	padding-top: 91px;
+	padding-bottom: 7px;
+}
+.portfolio-slides {
+	width: 398px;
+	margin: 0 auto;
+	padding-bottom: 95px;
+}
+.portfolio-slides a {
+	color: #A4A4A4;
+	text-transform: uppercase;
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 700;
+}
+.portfolio-slides a:hover {
+	text-decoration: none;
+	color: #FF0036;
+}
+.portfolio-slides a:not(:first-child) {
+	margin-left: 17px;
+}
+[class^="picture-"] {
+	height: 350px;
+}
+.picture-2, .picture-4, .picture-5, .picture-7 {
+	width: 300px;
+}
+.picture-1, .picture-3, .picture-6, .picture-8 {
+	width: 400px;
+}
+.picture-1 {
+	background: #F39943 url(images/Layer7.jpg) no-repeat 150% 40%;
+}
+.picture-2 {
+	background: #3782AA url(images/Layer18.jpg) no-repeat 100% 50%;
+}
+.picture-3 {
+	background: #EF5D88 url(images/Layer9.jpg) no-repeat 125% 50%;
+}
+.picture-4 {
+	background: #F6F0E0 url(images/Layer11.jpg) no-repeat 225% 50%;
+}
+.picture-5 {
+	background: #56CC82 url(images/Layer13.jpg) no-repeat 150% 50%;
+}
+.picture-6 {
+	background: #95A5A5 url(images/Layer17.jpg) no-repeat 150% 50%;
+}
+.picture-7 {
+	background: #24B0C9 url(images/Layer15.jpg) no-repeat 100% 50%;
+}
+.picture-8 {
+	background: #FA8562 url(images/Layer16.jpg) no-repeat 100% 50%;
+}
+.picture-1, .picture-2, .picture-3, .picture-5, .picture-6, .picture-7 {
+	float: left;
+}
+.picture-4, .picture-8 {
+	float: right;
+}
+[class^="picture-black-bg-"] {
+	height: 350px;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+}
+.picture-black-bg-2, .picture-black-bg-4, .picture-black-bg-5, .picture-black-bg-7 {
+	width: 300px;
+}
+.picture-black-bg-1, .picture-black-bg-3, .picture-black-bg-6, .picture-black-bg-8 {
+	width: 400px;
+}
+[class^="picture-black-bg-"] p:first-child {
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	padding-top: 152px;
+}
+[class^="picture-black-bg-"] p:last-child {
+	font-family: "Lato";
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding-top: 6px;
+}
+[class^="picture-"]:hover [class^="picture-black-bg"] {
+	display: block;
+}
+.picture-1, .picture-5 {
+	margin-left: 15px;
+}
+.picture-4, .picture-8 {
+	margin-right: 15px;
+}
+.our-product-features .slider {
+	margin-top: 0;
+}
+.red-line-slider {
+	background-color: #FF0036;
+}
+.red-shape-hexa-slider {
+	background-color: #FF0036;
+}
+.red-shape-hexa-slider::before {
+	border-right-color: #FF0036;
+}
+.red-shape-hexa-slider::after {
+	border-left-color: #FF0036;
+}
+.our-product-features {
+	padding-bottom: 200px;
+}
+.our-product-name {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 91px;
+}
+.our-product-lorem {
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: center;
+	font-weight: 700;
+	padding-top: 29px;
+	padding-bottom: 166px;
+}
+.feature {
+	width: 368px;
+	height: 51px;
+	border: 1px solid #E2E2E2;
+}
+.feature:hover {
+	background-color: #FF0036;
+	cursor: pointer;
+}
+.feature:hover p {
+	color: white;
+}
+.feature:hover .shape-feature > .glyph {
+	color: white;
+}
+.feature:hover .check-mark > .glyph {
+	color: #FF0036;
+}
+.features-right {
+	margin-left: 22px;
+}
+.feature p {
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 51px;
+}
+.feature:not(:last-of-type) {
+	margin-bottom: 23px;
+}
+.left-feature .shape-feature, .right-feature p {
+	float: left;
+}
+.right-feature .shape-feature {
+	float: right;
+}
+.shape-feature {
+	position: relative;
+}
+.shape-feature > .glyph {
+	font-size: 36px;
+	cursor: pointer;
+	color: #E7E7E7;
+}
+.check-mark {
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	z-index: 10;
+}
+.check-mark .glyph {
+	font-size: 12px;
+}
+.right-feature .shape-feature {
+	margin-right: 19px;
+}
+.left-feature .shape-feature {
+	margin-left: 19px;
+	margin-right: 12px;
+}
+.right-feature:first-child p {	
+	margin-left: 19px;
+}
+.right-feature:nth-child(2) p {	
+	margin-left: 51px;
+}
+.right-feature:last-child p {	
+	margin-left: 151px;
+}
+.gray-shape-bg {
+	position: absolute;
+	left: 8px;
+	top: 10px;
+}
+.gray-bg {
+	position: relative;
+	width: 18px;
+	height: 32px;
+	background-color: #E7E7E7;
+}
+.gray-bg::before, .gray-bg::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 15px;
+	border-bottom-width: 15px;
+}
+.gray-bg::before {
+	border-left-width: 0;
+	border-right-width: 9px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: #E7E7E7;
+	left: -9px;
+}
+.gray-bg::after {
+	border-right-width: 0;
+	border-left-width: 9px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: #E7E7E7;
+	right: -9px;
+}
+.feature:hover .gray-bg {
+	background-color: white;
+}
+.feature:hover .gray-bg::before {
+	border-right-color: white;
+}
+.feature:hover .gray-bg::after {
+	border-left-color: white;
+}
+.hexagon-main {
+	position: relative;
+	width: 237px;
+	height: 411px;
+	background-color: #4C4C4C;
+	top: 102px;
+	left: 75px;
+}
+.hexagon-main::before, .hexagon-main::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 205.5px;
+	border-bottom-width: 205.5px;
+}
+.hexagon-main::before {
+	border-left-width: 0;
+	border-right-width: 118px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: #4C4C4C;
+	left: -118px;
+}
+.hexagon-main::after {
+	border-right-width: 0;
+	border-left-width: 118px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: #4C4C4C;
+	right: -118px;
+	top: 0;
+}
+.hexagon-bg {
+	position: relative;
+	width: 237px;
+	height: 205.5px;
+	background-color: #262626;
+	top: 205px;
+	left: 0px;
+	z-index: 10;
+}
+.hexagon-bg::before, .hexagon-bg::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 205.5px;
+	border-bottom-width: 205.5px;
+	border-top-width: 0;
+}
+.hexagon-bg::before {
+	border-left-width: 0;
+	border-right-width: 118px;
+	border-bottom-color: transparent;
+	border-right-color: #262626;
+	left: -118px;
+}
+.hexagon-bg::after {
+	border-right-width: 0;
+	border-left-width: 118px;
+	border-bottom-color: transparent;
+	border-left-color: #262626;
+	right: -118px;
+	top: 0;
+}
+.tablet {
+	width: 373px;
+	height: 489px;
+	position: relative;
+	top: -385px;
+	left: -68px;
+	z-index: 1;
+	border-radius: 25px;
+	background-color: #E0E0E0;
+}
+.tablet::before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	left: 183px;
+	top: 23px;
+	z-index: 3;
+}
+.tablet-screen {
+	width: 365px;
+	height: 481px;
+	background-color: #D8D8D8;
+	position: absolute;
+	border-radius: 25px;
+	top: 4px;
+	left: 4px;
+	border: 1px solid #CACACA;
+}
+.picture-in-tablet {
+	width: 334px;
+	height: 422px;
+	border: 3px solid black;
+	border-radius: 5px;
+	background: url(images/woman-in-red.jpg) no-repeat 25% 0%;
+	background-size: cover;
+	margin-left: 15px;
+	margin-top: 42px;
+}
+.hexagon-bg .free-psd {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	background-color: #393939;
+	width: 170px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	position: absolute;
+	top: 80px;
+	left: 30px;
 }
