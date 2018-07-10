@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: "MgOpenModata";
+	src: url('fonts/MgOpenModataRegular.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
 .glyph {
 	font-family: "Glyphter";
 }
@@ -16,7 +22,7 @@
 	width: 1170px;
 	margin: 0 auto;
 }
-.row::after, .main-menu::after {
+.row::after, .main-menu::after, .team-members::after, .skills-blocks::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -24,7 +30,11 @@
 .header {
 	background-color: #08080C;
 }
-.header, .bg-woman-in-red, .about-creativia, .portfolio, .our-product-fetures, .our-clients, .our-teamwork, .our-skills , .our-services, .plans-bestseller, .twitter-block, .our-blog, .follow-creativia, .fine-us-here {
+/*.header, .bg-woman-in-red, .about-creativia, .portfolio, .our-product-fetures, .our-clients, .our-teamwork, .our-skills , .our-services, .plans-bestseller, .twitter-block, .our-blog, .follow-creativia, .fine-us-here {
+	width: 1400px;
+	margin: 0 auto;
+}*/
+.pictures {
 	width: 1400px;
 	margin: 0 auto;
 }
@@ -73,7 +83,8 @@
 
 }
 .bg-woman-in-red {
-	background: #1A1A1A url(images/woman-in-red.jpg) no-repeat 0% 40%;
+	background: #1A1A1A url(images/woman-in-red.jpg) no-repeat 0% 38% / cover;
+	background-origin: content-box;
 }
 .black-bg {
 	background-color: rgba(0, 0, 0, 0.3);
@@ -460,6 +471,9 @@
 	text-align: center;
 	padding-top: 6px;
 }
+[class^="picture-black-bg-"] a {
+	color: white;
+}
 [class^="picture-"]:hover [class^="picture-black-bg"] {
 	display: block;
 }
@@ -469,8 +483,8 @@
 .picture-4, .picture-8 {
 	margin-right: 15px;
 }
-.our-product-features .slider {
-	margin-top: 0;
+.our-product-features .slider, .our-teamwork .slider {
+	margin-top: 0; /*Красный слайдер*/
 }
 .red-line-slider {
 	background-color: #FF0036;
@@ -734,4 +748,472 @@
 	position: absolute;
 	top: 80px;
 	left: 30px;
+}
+.hexagon-bg .free-psd:hover {
+	text-decoration: none;
+}
+.our-clients {
+	background: url(images/clients.jpg) no-repeat 50% 55% / cover;
+}
+.our-clients-black-bg {
+	background: rgba(0, 0, 0, 0.9);
+}
+.our-clients-name {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 30px;
+	padding-top: 85px;
+	padding-bottom: 24px;
+	color: white;
+	text-align: center;
+}
+.our-clients-lorem {
+	color: #A4A4A4;
+	text-align: center;
+	font-family: "Lato";
+	font-weight: 700;
+	font-size: 16px;
+}
+.happy-say {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	padding-top: 83px;
+	padding-bottom: 27px;
+}
+.happy-say-lorem {
+	color: #A4A4A4;
+	font-family: "Lato";
+	line-height: 22px;
+	font-size: 16px;
+	text-align: center;
+}
+.hexa-photo {
+	position: relative;
+	width: 34px;
+	height: 57px;
+	background-color: black;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	top: 35px;
+}
+.hexa-photo::before, .hexa-photo::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 28.5px;
+	border-bottom-width: 28.5px;
+}
+.hexa-photo::before {
+	border-left-width: 0;
+	border-right-width: 17px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: black;
+	left: -17px;
+}
+.hexa-photo::after {
+	border-right-width: 0;
+	border-left-width: 17px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: black;
+	right: -17px;
+}
+.amr-srour {
+	color: #FF0036;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 16px;
+	padding-top: 49px;
+}
+.photo-slides {
+	width: 34px;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 95px;
+}
+.photo-slide {
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	display: inline-block;
+}
+.photo-slide:not(:last-child) {
+	margin-right: 1px;
+}
+.photo-slide:hover {
+	background-color: #FF0036;
+	cursor: pointer;
+}
+.multimedia-blocks {
+	display: inline-block;
+	width: 270px;
+	height: 116px;
+	background: /*linear-gradient(to right, #A4A4A4 0%, white 22%, white 25%, white 35%, white 45%, white 55%, white 65%, white 75%, white 80%,  #A4A4A4 100%),
+	                  linear-gradient(#A4A4A4 0%, white 30%, white 35%, white 40%, white 45%, white 50%, white 55%, white 60%, white 65%, white 50%, white 70%, #A4A4A4 100%)*/
+	                  url(images/Rectangle.jpg) no-repeat 50% 50%;	            
+	line-height: 116px;
+}
+.multimedia-blocks:first-child {
+	margin-top: 88px;
+	margin-left: 21px;
+}
+.multimedia-blocks:nth-child(3) {
+	margin-left: 21px;
+}
+.multimedia-blocks:last-child, .multimedia-blocks:nth-child(2) {
+	margin-left: 20px;
+} 
+.our-clients .container .row .col-md-6 {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+.multimedia-blocks:first-child, .multimedia-blocks:nth-child(2) {
+	margin-bottom: 31px;
+}
+.multimedia-blocks p {
+	font-size: 24px;
+	font-family: "MgOpenModata";
+	text-align: center;
+	padding-left: 60px;
+	position: relative;
+}
+.multimedia-blocks p::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 50px;
+	background-size: cover;
+	left: 57px;
+	top: 34px;
+}
+.graphicriver::before {
+	background:  url(images/graphicriver.jpg) no-repeat ;
+}
+.multimedia-blocks .videohive::before{
+	background:  url(images/videohive.jpg) no-repeat;
+	width: 35px;
+	height: 40px;
+	background-size: contain;
+	top: 38px;
+	left: 75px;
+}
+.photodune::before{
+	background:  url(images/photodune.jpg )no-repeat;
+}
+.codecanyon::before {
+	background:  url(images/codecanyon.jpg) no-repeat;
+}
+.our-teamwork-name {
+	font-family: "Raleway";
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 125px;
+	padding-bottom: 23px;
+}
+.our-teamwork-lorem {
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 85px;
+}
+.team-member {
+	float: left;
+	width: 270px;
+	height: 361px;
+}
+.photo-team-member {
+	height: 241px;
+	background-size: cover;
+}
+.bruce-wayne-photo {
+	background: url(images/bruce-wayne-photo.jpg);
+}
+.amr-srour-photo {
+	background: url(images/amr-srour-photo.jpg);
+}
+.sarah-doe-photo {
+	background: url(images/sarah-doe-photo.jpg);
+}
+.johan-de-photo {
+	background: url(images/johan-de-photo.jpg);
+}
+.team-member-name {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 27px;
+}
+.team-member-position {
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 21px;
+}
+.team-member-description {
+	border: 1px solid #E7E7E7;
+}
+.team-member:hover .team-member-description {
+	border-color: black;
+}
+.team-member:hover .photo-team-member {
+	background-image: none;
+	background-color: #262626;
+}
+.team-member:not(.team-member-4) {
+	margin-right: 30px;
+}
+.team-member:hover .team-member-name {
+	color: #FF0036;
+}
+.soc-icons {
+	width: 155px;
+	height: 41px;
+	margin: 0 auto;
+}
+.soc-icons .glyph {
+	font-size: 19px;
+	color: #FF0036;
+}
+.icon {
+	display: none;
+	float: left;
+	position: relative;
+	width: 23px;
+	height: 41px;
+	background-color: white;
+	line-height: 41px;
+	text-align: center;
+	top: 100px;
+}
+.icon::before, .icon::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 20.5px;
+	border-bottom-width: 20.5px;
+}
+.icon::before {
+	border-left-width: 0;
+	border-right-width: 11px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: white;
+	left: -11px;
+}
+.icon::after {
+	border-right-width: 0;
+	border-left-width: 11px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: white;
+	right: -11px;
+}
+.fb-icon {
+	left: 11px;
+}
+.tw-icon {
+	left: 44px;
+}
+.gplus-icon {
+	left: 77px;
+}
+.team-member:hover .icon {
+	display: block;
+}
+.our-teamwork .slider {
+	margin-top: 109px;
+}
+.our-skills {
+	padding-bottom: 90px;
+}
+.our-skills-name {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 69px;
+	padding-bottom: 22px;
+}
+.our-skills-lorem {
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: center;
+	font-weight: 700;
+	padding-bottom: 88px;
+}
+.skills-block {
+	float: left;
+	margin-right: 52px;
+	width: 153px;
+	text-align: center;
+}
+.skills-blocks {
+	width: 768px;
+	margin: 0 auto;
+}
+.skills-percent {
+	position: relative;
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	line-height: 145px;
+	text-align: center;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 40px;
+	border: 3px solid #E0E0E0;
+}
+.skills-block-4 {
+	margin-right: 0;
+}
+.skills-block p:first-of-type {
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.donec {
+	font-family: "Lato";
+	font-size: 16px;
+	line-height: 18px;
+}
+.skills-percent::before {
+	content: "";
+	top: -3px;
+	left: -3px;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 3px solid #FF0036;
+	border-radius: inherit;
+}
+.skill-1::before {
+	clip: rect(0px 132px 145px 0px);
+}
+.skill-2::before {
+	clip: rect(0px 117px 145px 0px);
+}
+.skill-3::before {
+	clip: rect(0px 102px 145px 0px);
+}
+.skill-4::before {
+	clip: rect(0px 132px 145px 0px);
+}
+.our-services {
+	background-color: #272727;
+	color: white;
+	padding-bottom: 100px;
+}
+.our-services-name {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	padding-top: 91px;
+	padding-bottom: 23px;
+}
+.our-services-lorem {
+	font-family: "Lato";
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	color: #A4A4A4;
+	padding-bottom: 31px;
+}
+.service-block > p {
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	padding-bottom: 31px;
+	padding-top: 18px;
+	padding-left: 100px;
+}
+.service-description p {
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: justify;
+	line-height: 22px;
+	color: #A4A4A4;
+}
+.service-description {
+	width: 570px;
+	height: 121px;
+	background: #343434;
+	padding-left: 37px;
+	padding-right: 28px;
+	padding-top: 26px;
+}
+.our-services-blocks .row .col-md-6:nth-child(2) .service-block {
+	padding-left: 14px;
+}
+.service-icon {
+	position: relative;
+	width: 34px;
+	height: 57px;
+	background-color: #A4A4A4;
+	top: 59px;
+	left: 17px;
+	text-align: center;
+	line-height: 57px;
+}
+.service-icon::before, .service-icon::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 28.5px;
+	border-bottom-width: 28.5px;
+}
+.service-icon::before {
+	border-left-width: 0;
+	border-right-width: 17px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: #A4A4A4;
+	left: -17px;
+}
+.service-icon::after {
+	border-right-width: 0;
+	border-left-width: 17px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: #A4A4A4;
+	right: -17px;
+}
+.service-icon .glyph {
+	color: #262626;
+	font-size: 28px;
+}
+.service-block:hover {
+	cursor: pointer;
+}
+.service-block:hover .service-icon{
+	background: #FF0036;
+}
+.service-block:hover .service-icon::before {
+	border-right-color: #FF0036;
+}
+.service-block:hover .service-icon::after {
+	border-left-color: #FF0036;
+}
+.service-block:hover .service-icon .glyph {
+	color: white;
+}
+.service-block:hover .service-description {
+	background: #3D2329;
 }
