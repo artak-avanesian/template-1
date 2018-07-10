@@ -15,6 +15,12 @@
 	font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: "MyriadPro";
+	src: url('fonts/MyriadPro-Regular.otf') format('opentype');
+	font-weight: normal;
+    font-style: normal;
+}
 .glyph {
 	font-family: "Glyphter";
 }
@@ -30,10 +36,6 @@
 .header {
 	background-color: #08080C;
 }
-/*.header, .bg-woman-in-red, .about-creativia, .portfolio, .our-product-fetures, .our-clients, .our-teamwork, .our-skills , .our-services, .plans-bestseller, .twitter-block, .our-blog, .follow-creativia, .fine-us-here {
-	width: 1400px;
-	margin: 0 auto;
-}*/
 .pictures {
 	width: 1400px;
 	margin: 0 auto;
@@ -69,15 +71,11 @@
 }
 .creativia {
 	color: white;
-	font-size: 32px;
-	font-family: "Oxygen";
+	font-size: 33px;
+	font-family: "Raleway";
 }
-.logo-shape {
-	heigh: 203px;
-	border-bottom: 3px solid #FF0036;
-	width: 122px;
-	background-color: #131313;
-	position: relative;
+.logo img {
+	background-color: transparent;
 }
 .logo-shape::before {
 
@@ -87,7 +85,7 @@
 	background-origin: content-box;
 }
 .black-bg {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 .why-creativia {
 	position: relative;
@@ -1032,7 +1030,7 @@
 .team-member:hover .icon {
 	display: block;
 }
-.our-teamwork .slider {
+.our-skills .slider {
 	margin-top: 109px;
 }
 .our-skills {
@@ -1532,6 +1530,9 @@ form {
 	height: 475px;
 	background-color: white;
 	padding-left: 43px;
+	position: absolute;
+	bottom: 0;
+	right: 400px;
 }
 form p {
 	font-family: "Raleway";
@@ -1570,4 +1571,62 @@ input[type="submit"] {
 	font-size: 16px;
 	float: right;
 	margin-right: 47px;
+}
+.location {
+	width: 300px;
+	height: 170px;
+	background-color: #262626;
+	position: relative;
+	padding-left: 25px;
+	padding-top: 27px;
+}
+.location p {
+	font-family: "MyriadPro";
+	font-size: 16px;
+	color: white;
+}
+.city, .phone, .email {
+	margin-top: -7px;
+}
+.location::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-width: 15px;
+	border-top-width: 80px;
+	border-bottom-width: 0;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: #262626;
+    bottom: -65px;
+    right: 30px;
+    transform: rotate(30deg);
+}
+.map {
+	position: relative;
+}
+.our-location {
+	position: absolute;
+	top: 370px;
+	left: 500px;
+}
+.design-by {
+	font-family: "MyriadPro";
+	font-size: 16px;
+	color: #8E8E8E;
+	float: right;
+	margin-right: 70px;
+	padding-bottom: 18px;
+	margin-top: -45px;
+}
+.footer {
+	background-color: #262626;
+}
+.footer-creativia {
+	font-family: "Raleway";
+	font-size: 33px;
+	text-align: center;
+	color: #8E8E8E;
+	letter-spacing: 5px;
+	padding-top: 19px;
 }
