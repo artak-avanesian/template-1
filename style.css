@@ -352,7 +352,6 @@
 	border-right-color: white;
 	left: -21px;
 }
-
 .red-hover-shape::after {
 	border-right-width: 0;
 	border-left-width: 21px;
@@ -483,7 +482,7 @@
 .picture-4, .picture-8 {
 	margin-right: 15px;
 }
-.our-product-features .slider, .our-teamwork .slider {
+.our-product-features .slider, .our-teamwork .slider, .plans-bestseller .slider, .our-blog .slider, .fine-us-here .slider {
 	margin-top: 0; /*Красный слайдер*/
 }
 .red-line-slider {
@@ -1216,4 +1215,359 @@
 }
 .service-block:hover .service-description {
 	background: #3D2329;
+}
+.plans-bestseller {
+	padding-bottom: 101px;
+}
+.bestseller-name, .our-blog-name, .follow-creativia-name, .fine-us-name {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 23px;
+}
+.bestseller-lorem, .our-blog-lorem, .fine-us-lorem {
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 88px;
+}
+.reseller-block {
+	float: left;
+	margin-right: 30px;
+	width: 270px;
+	height: 527px;
+}
+.reseller-block-4 {
+	margin-right: 0;
+}
+.reseller-name {
+	height: 48px;
+	line-height: 48px;
+	background-color: #262626;
+}
+.reseller-name p {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+.reseller-price {
+	height: 87px;
+	line-height: 87px;
+	background-color: #F2F2F2;
+}
+.reseller-price p {
+	font-family: "Lato";
+	font-weight: 900;
+	font-size: 50px;
+	text-align: center;
+	color: #262626;
+}
+.reseller-price p span {
+	font-family: "Lato";
+	font-size: 16px;
+}
+.reseller {
+	height: 52px;
+	line-height: 52px;
+	border: 1px solid #E7E7E7;
+	border-top-style: none;
+}
+.reseller p {
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: center;
+	color: #262626;
+}
+.reseller-button{
+	height: 80px;
+	border: 1px solid #E7E7E7;
+	border-top-style: none;
+	padding-top: 21px;
+}
+.oreder {
+	display: block;
+	width: 228px;
+	height: 38px;
+	background-color: #262626;
+	color: white;
+	font-family: "Raleway";
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 38px;
+	margin: 0 auto;
+}
+.oreder:hover {
+	text-decoration: none;
+	color: white;
+} 
+.reseller-block:hover .reseller-price {
+	background-color: #FF0036;
+}
+.reseller-block:hover .reseller-price p {
+	color: white;
+}
+.reseller-block:hover .oreder {
+	background-color: #FF0036;
+}
+.twitter-block {
+	background-color: #272727;
+	padding-top: 89px;
+	position: relative;
+}
+.twitter-block .twitter-bird {
+	width: 40px;
+	margin: 0 auto;
+}
+.twitter-block .glyph {
+	text-align: center;
+	color: #FF0036;
+	font-size: 38px;
+}
+.twitter-lorem {
+	font-family: "Lato";
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	width: 645px;
+	margin: 0 auto;
+	line-height: 22px;
+	padding-top: 9px;
+	padding-bottom: 98px;
+}
+.bird-bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: rotate(-18deg) translate(70px, 40px);
+}
+.bird-bg .glyph {
+	font-size: 230px;
+	color: #3D3D3D;
+}
+.our-blog {
+	padding-bottom: 85px;
+}
+[class^="review-icon-"] {
+	width: 370px;
+	height: 200px;
+}
+.review-icon-1 {
+	background: #56CA7F url(images/shirt.jpg) no-repeat 100% 100%;
+	margin-bottom: 49px;
+}
+.review-icon-2 {
+	background: #24B0C9 url(images/car-bank.jpg) no-repeat 100% 50%;
+}
+.review {
+	margin-left: 11px;
+}
+.review .glyph {
+	font-size: 14px;
+	margin-right: 6px;
+}
+.review span {
+	color: #A2A2A2;
+}
+.review span:nth-of-type(2n) {
+	font-family: "Lato";
+	font-size: 12px;
+	margin-right: 18px;
+}
+.review-lorem {
+	font-family: "Raleway";
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 4px;
+	margin-top: -5px;
+}
+.review-integer {
+	padding-top: 13px;
+	font-family: "Lato";
+	line-height: 20px;
+	font-size: 16px;
+	text-align: justify;
+	width: 568px;
+	padding-bottom: 18px;
+}
+.view-more {
+	display: block;
+	width: 120px;
+	height: 40px;
+	color: white;
+	text-transform: uppercase;
+	font-family: "Lato";
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #262626;
+}
+.view-more:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #FF0036;
+}
+.review .second-review {
+	margin-top: 44px;
+}
+.arrow-down {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 0 auto;
+	background-color: #F2F2F2;
+	text-align: center;
+	line-height: 45px;
+	margin-top: 40px;
+}
+.arrow-down .glyph{
+	color: #A2A2A2;
+	font-size: 18px;
+}
+.follow-creativia {
+	background: url(images/woman-in-red.jpg) no-repeat 0% 25% / cover;
+}
+.follow-creativia-name {
+	color: white;
+}
+.follow-creativia-black-bg {
+	background: rgba(0, 0, 0, 0.9);
+}
+.social-block {
+	width: 475px;
+	margin: 0 auto;
+}
+.social-icon {
+	float: left;
+	margin-right: 49px;
+}
+.social-icon-4 {
+	margin-right: 0;
+}
+.follow-hexa-shape {
+	position: relative;
+	text-align: center;
+	top: px;
+}
+.follow-hexa-shape  .follow-hexagon {
+	font-size: 78px;
+	cursor: pointer;
+	color: #FF0036;
+}
+.follow-inside-shape {
+	position: absolute;
+	top: 40px;
+	left: 27px;
+	z-index: 10;
+}
+.follow-inside-shape .glyph {
+	font-size: 22px;
+	color: #FF0036;
+}
+.follow-red-shape {
+	position: absolute;
+	left: 21px;
+	top: 21px;
+}
+.follow-red-hover-shape {
+	position: relative;
+	width: 37px;
+	height: 68px;
+	background-color: transparent;
+}
+.follow-red-hover-shape::before, .follow-red-hover-shape::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-top-width: 34px;
+	border-bottom-width: 34px;
+}
+.follow-red-hover-shape::before {
+	border-left-width: 0;
+	border-right-width: 19px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	left: -19px;
+}
+.follow-red-hover-shape::after {
+	border-right-width: 0;
+	border-left-width: 19px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	right: -19px;
+}
+.follow-hexa-shape:hover .follow-red-shape .follow-red-hover-shape {
+	background-color: #FF0036;
+}
+.follow-hexa-shape:hover .follow-red-shape .follow-red-hover-shape::before {
+	border-right-color: #FF0036;
+}
+.follow-hexa-shape:hover .follow-red-shape .follow-red-hover-shape::after {
+	border-left-color: #FF0036; 
+}
+.follow-hexa-shape:hover .follow-inside-shape .glyph {
+	color: white;
+}
+.social-icon a:hover {
+	text-decoration: none;
+}
+.social-followers {
+	font-family: "Lato";
+	font-size: 16px;
+	color: white;
+	padding-top: 12px;
+	padding-bottom: 76px;
+	text-align: center;
+}
+form {
+	width: 470px;
+	height: 475px;
+	background-color: white;
+	padding-left: 43px;
+}
+form p {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 110px;
+	text-transform: uppercase;
+}
+input[type="text"], input[type="email"] {
+	width: 378px;
+	height: 34px;
+	border: 1px solid #E7E7E7;
+	line-height: 34px;
+	margin-bottom: 17px;
+	padding-left: 12px;
+}
+input:placeholder {
+	font-family: ""Lato;
+	font-size: 16px;
+	color: #616161;
+}
+textarea {
+	width: 378px;
+	height: 88px;
+	border: 1px solid #E7E7E7;
+	margin-bottom: 22px;
+}
+input[type="submit"] {
+	width: 120px;
+	height: 40px; 
+	background-color: #262626;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	font-family: "Lato";
+	font-size: 16px;
+	float: right;
+	margin-right: 47px;
 }
