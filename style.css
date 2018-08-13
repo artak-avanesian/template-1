@@ -21,6 +21,12 @@
 	font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: "AeonisLTPro-MediumCond";
+	src: url('fonts/AeonisLTPro-MediumCond.otf') format('opentype');
+	font-weight: normal;
+    font-style: normal;
+}
 .glyph {
 	font-family: "Glyphter";
 }
@@ -74,11 +80,25 @@
 	font-size: 33px;
 	font-family: "Raleway";
 }
-.logo img {
-	background-color: transparent;
+.qwerty {
+	position: absolute;
 }
-.logo-shape::before {
-
+svg {
+	position: relative;
+	top: -2px;
+	left: -80px;
+	z-index: 1;
+}
+.hexagon-creativia {
+	text-align: center;
+	font-size: 33px;
+	position: absolute;
+	top: 24px;
+	left: -20px;
+	letter-spacing: 5px;
+	color: white;
+	z-index: 20;
+	font-family: "AeonisLTPro-MediumCond";
 }
 .bg-woman-in-red {
 	background: #1A1A1A url(images/woman-in-red.jpg) no-repeat 0% 38% / cover;
@@ -154,17 +174,17 @@
 	width: 1170px;
 	margin: 0 auto;
 }
-.about-header {
-	font-size: 30px;
+.bestseller-name, .our-blog-name, .follow-creativia-name, .fine-us-name, .about-header, .portfolio-header, .our-product-name, .our-clients-name, .our-teamwork-name, .our-skills-name, .our-services-name {
 	font-family: "Raleway";
 	font-weight: 700;
+	font-size: 30px;
 	text-align: center;
-	padding-top: 90px;
-	padding-bottom: 22px;
+	padding-top: 100px;
+	padding-bottom: 23px;
 }
-.about-lorem {
-	font-size: 16px;
+.bestseller-lorem, .our-blog-lorem, .fine-us-lorem, .about-lorem , .our-product-lorem, .our-clients-lorem, .our-teamwork-lorem, .our-skills-lorem, .our-services-lorem {
 	font-family: "Lato";
+	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
 	padding-bottom: 88px;
@@ -306,12 +326,97 @@
 [class^="mode-"]:not(:last-of-type) {
 	margin-right: 38px;
 }
+.hexagon {
+    overflow: hidden;
+    transform: rotate(120deg);
+    cursor: pointer;
+    width: 500px;
+    height: 360px;
+    margin-left: 89px;
+    top: -5px;
+    position: relative;
+    z-index: 10;
+}
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+ }
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background: url(images/clients.jpg) no-repeat 50% / cover;
+    transform: rotate(-60deg);
+}
+.hexagon1 {
+    overflow: hidden;
+    transform: rotate(120deg);
+    cursor: pointer;
+    width: 480px;
+    height: 324px;
+    margin-top: -348px;
+}
+.hexagon-in11 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+ }
+.hexagon-in12 {
+    width: 100%;
+    height: 100%;
+    background: url(images/clients-octa-3.jpg) no-repeat 50% 25% / cover;
+    transform: rotate(-60deg);
+}
+.hexagon2 {
+    overflow: hidden;
+    transform: rotate(120deg);
+    cursor: pointer;
+    width: 480px;
+    height: 324px;
+    margin-left: 194px;
+    margin-top: -329px;
+}
+.hexagon-in21 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+ }
+.hexagon-in22 {
+    width: 100%;
+    height: 100%;
+    background: url(images/clients-octa-2.jpg) no-repeat 50% / cover;
+    transform: rotate(-60deg);
+}
+.hexagon-black-bg {
+    overflow: hidden;
+    transform: rotate(120deg);
+    cursor: pointer;
+    width: 480px;
+    height: 324px;
+    position: relative;
+    z-index: 10;
+}
+.hexagon-black-bg-in31 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+ }
+.hexagon-black-bg-in32 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    transform: rotate(-60deg);
+}
 .hexa-shape {
 	position: relative;
 	text-align: center;
 	top: 87px;
 }
-.hexa-shape  .hexa {
+.hexa-shape .hexa {
 	font-size: 86px;
 	cursor: pointer;
 }
@@ -378,13 +483,8 @@
 	padding-bottom: 109px;
 }
 .portfolio-header {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	color: white;
-	padding-top: 91px;
 	padding-bottom: 7px;
+	color: white;
 }
 .portfolio-slides {
 	width: 398px;
@@ -497,21 +597,6 @@
 }
 .our-product-features {
 	padding-bottom: 200px;
-}
-.our-product-name {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	padding-top: 91px;
-}
-.our-product-lorem {
-	font-family: "Lato";
-	font-size: 16px;
-	text-align: center;
-	font-weight: 700;
-	padding-top: 29px;
-	padding-bottom: 166px;
 }
 .feature {
 	width: 368px;
@@ -756,20 +841,10 @@
 	background: rgba(0, 0, 0, 0.9);
 }
 .our-clients-name {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 30px;
-	padding-top: 85px;
-	padding-bottom: 24px;
 	color: white;
-	text-align: center;
 }
 .our-clients-lorem {
 	color: #A4A4A4;
-	text-align: center;
-	font-family: "Lato";
-	font-weight: 700;
-	font-size: 16px;
 }
 .happy-say {
 	color: white;
@@ -789,37 +864,24 @@
 	text-align: center;
 }
 .hexa-photo {
-	position: relative;
-	width: 34px;
 	height: 57px;
-	background-color: black;
-	right: 0;
-	left: 0;
+	width: 75px;
+	transform: rotate(120deg);
+	overflow: hidden;
 	margin: 0 auto;
-	top: 35px;
+	margin-top: 35px;
 }
-.hexa-photo::before, .hexa-photo::after {
-	content: "";
-	position: absolute;
-	border-style: solid;
-	border-top-width: 28.5px;
-	border-bottom-width: 28.5px;
+.hexa-photo-in-1 {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-60deg);
+	overflow: hidden;
 }
-.hexa-photo::before {
-	border-left-width: 0;
-	border-right-width: 17px;
-	border-top-color: transparent;
-	border-bottom-color: transparent;
-	border-right-color: black;
-	left: -17px;
-}
-.hexa-photo::after {
-	border-right-width: 0;
-	border-left-width: 17px;
-	border-top-color: transparent;
-	border-bottom-color: transparent;
-	border-left-color: black;
-	right: -17px;
+.hexa-photo-in-2 {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-60deg);
+	background: url(images/amr.jpg) no-repeat 50% 50% / cover;
 }
 .amr-srour {
 	color: #FF0036;
@@ -828,7 +890,7 @@
 	font-family: "Raleway";
 	font-weight: 700;
 	font-size: 16px;
-	padding-top: 49px;
+	padding-top: 14px;
 }
 .photo-slides {
 	width: 34px;
@@ -910,19 +972,7 @@
 	background:  url(images/codecanyon.jpg) no-repeat;
 }
 .our-teamwork-name {
-	font-family: "Raleway";
-	font-size: 30px;
-	font-weight: 700;
-	text-align: center;
 	padding-top: 125px;
-	padding-bottom: 23px;
-}
-.our-teamwork-lorem {
-	font-family: "Lato";
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-	padding-bottom: 85px;
 }
 .team-member {
 	float: left;
@@ -1037,19 +1087,7 @@
 	padding-bottom: 90px;
 }
 .our-skills-name {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
 	padding-top: 69px;
-	padding-bottom: 22px;
-}
-.our-skills-lorem {
-	font-family: "Lato";
-	font-size: 16px;
-	text-align: center;
-	font-weight: 700;
-	padding-bottom: 88px;
 }
 .skills-block {
 	float: left;
@@ -1116,19 +1154,10 @@
 	padding-bottom: 100px;
 }
 .our-services-name {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
 	color: white;
 	padding-top: 91px;
-	padding-bottom: 23px;
 }
 .our-services-lorem {
-	font-family: "Lato";
-	font-weight: 700;
-	font-size: 16px;
-	text-align: center;
 	color: #A4A4A4;
 	padding-bottom: 31px;
 }
@@ -1217,21 +1246,7 @@
 .plans-bestseller {
 	padding-bottom: 101px;
 }
-.bestseller-name, .our-blog-name, .follow-creativia-name, .fine-us-name {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 23px;
-}
-.bestseller-lorem, .our-blog-lorem, .fine-us-lorem {
-	font-family: "Lato";
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-	padding-bottom: 88px;
-}
+
 .reseller-block {
 	float: left;
 	margin-right: 30px;
@@ -1415,6 +1430,7 @@
 	margin-top: 44px;
 }
 .arrow-down {
+	display: block;
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
@@ -1423,6 +1439,9 @@
 	text-align: center;
 	line-height: 45px;
 	margin-top: 40px;
+}
+.arrow-down:hover {
+	text-decoration: none;
 }
 .arrow-down .glyph{
 	color: #A2A2A2;
@@ -1451,7 +1470,6 @@
 .follow-hexa-shape {
 	position: relative;
 	text-align: center;
-	top: px;
 }
 .follow-hexa-shape  .follow-hexagon {
 	font-size: 78px;
@@ -1623,7 +1641,7 @@ input[type="submit"] {
 	background-color: #262626;
 }
 .footer-creativia {
-	font-family: "Raleway";
+	font-family: "AeonisLTPro-MediumCond";
 	font-size: 33px;
 	text-align: center;
 	color: #8E8E8E;
